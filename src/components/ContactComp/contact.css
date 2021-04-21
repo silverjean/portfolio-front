@@ -1,0 +1,40 @@
+.contact_body {
+  background-color: #fff;
+
+  margin: 10px;
+  padding: 5px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  transition: 1.2s;
+  position: relative;
+}
+
+.contact_body:hover {
+  transition: 1.2s;
+  -moz-transform: translate(-2px, -2px);
+  -ms-transform: translate(-2px, -2px);
+  -o-transform: translate(-2px, -2px);
+  -webkit-transform: translate(-2px, -2px);
+  transform: translate(-2px, -2px);
+
+  cursor: pointer;
+  background-color: #a5b1c2;
+  color: whitesmoke;
+}
+
+.contact_name {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px;
+}
+
+.contact_message {
+  padding: 8px;
+  height: 115px;
+  word-wrap: break-word;
+}
+
+.contact_icon {
+  position: relative;
+}

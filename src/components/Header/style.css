@@ -1,0 +1,17 @@
+.header {
+  border-radius: 3px;
+  margin-top: 25px;
+}
+
+#social {
+  position: absolute;
+  right: 30px;
+}
+
+.social {
+  margin-right: 10px;
+}
+
+.link {
+  text-decoration: none;
+}

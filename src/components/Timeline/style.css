@@ -1,0 +1,30 @@
+.timeline {
+  padding: 0 !important;
+}
+
+.timeline .t_header {
+  padding-top: 7px;
+}
+
+.timeline .t_firstItem {
+  min-height: 80px !important;
+}
+
+.timeline .MuiTimelineItem-missingOppositeContent:before {
+  display: none;
+}
+.timeline .t_dot_header {
+  color: #535c68;
+  font-size: small;
+  padding: 2px !important;
+}
+
+.timeline .t_dot {
+  color: #535c68;
+  padding: 2px !important;
+  font-size: small;
+}
+
+.timeline .separator {
+  padding-left: 12px !important;
+}

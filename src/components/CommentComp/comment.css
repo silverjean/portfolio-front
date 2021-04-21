@@ -1,0 +1,41 @@
+.comment_body {
+  background-color: #fff;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 6px;
+
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+
+  transition: 1.2s;
+  position: relative;
+}
+
+.comment_body:hover {
+  transition: 1.2s;
+  -moz-transform: translate(-2px, -2px);
+  -ms-transform: translate(-2px, -2px);
+  -o-transform: translate(-2px, -2px);
+  -webkit-transform: translate(-2px, -2px);
+  transform: translate(-2px, -2px);
+
+  cursor: pointer;
+  background-color: #a5b1c2;
+  color: whitesmoke;
+}
+
+.comment_name {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px;
+  text-align: center;
+}
+
+.comment_message {
+  padding: 8px;
+  height: 100px;
+  word-wrap: break-word;
+}
+
+.comment_icon {
+  position: relative;
+}
