@@ -1,7 +1,8 @@
 .contact_body {
   background-color: #fff;
 
-  margin: 10px;
+  margin: 10px !important;
+  width: auto !important;
   padding: 5px;
   border-radius: 6px;
   text-align: center;

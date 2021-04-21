@@ -71,7 +71,7 @@ export default function Feedback() {
                   required
                   fullWidth
                   value={content}
-                  label="Comentário"
+                  label="Comentários e sujestões"
                   name="comment"
                   autoComplete="comment"
                   onChange={({ target }) => setContent(target.value)}
