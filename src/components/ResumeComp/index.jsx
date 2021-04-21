@@ -26,58 +26,78 @@ export default function ResumeComp() {
         </Typography>
       </Grid>
       <Grid item container spacing={5}>
-        <Grid item container xs={12} sm={12} md={5} className="box list">
-          <p className="sub_title">Histórico Academico</p>
-          <ul className="rcolumn">
-            <li>
-              <p>Furg</p>
-              <small>Engenharia Mecânica | 2015 - 2022</small>
-            </li>
-            <li>
-              <p>IFRS - Rio Grande</p>
-              <small>Téc. Refrigeração | 2010 - 2013</small>
-            </li>
-            <li>
-              <p>Growdev</p>
-              <small>Programa Start | 2020 - 2021</small>
-            </li>
-            <li>
-              <p>Alura</p>
-              <small>Desenvolve Boticário - Frontend | 2021 - 2021</small>
-            </li>
-          </ul>
+        <Grid
+          item
+          container
+          direction="column"
+          xs={12}
+          sm={12}
+          md={5}
+          className="box list"
+        >
+          <Grid item container direction="column">
+            <Grid item justify="center" sm={12} md>
+              <p className="sub_title">Histórico Academico</p>
+            </Grid>
+            <Grid item sm={12} md={6}>
+              <ul>
+                <li>
+                  <p>Furg</p>
+                  <small>Engenharia Mecânica | 2015 - 2022</small>
+                </li>
+                <li>
+                  <p>IFRS - Rio Grande</p>
+                  <small>Téc. Refrigeração | 2010 - 2013</small>
+                </li>
+                <li>
+                  <p>Growdev</p>
+                  <small>Programa Start | 2020 - 2021</small>
+                </li>
+                <li>
+                  <p>Alura</p>
+                  <small>Desenvolve Boticário - Frontend | 2021 - 2021</small>
+                </li>
+              </ul>
+            </Grid>
+          </Grid>
         </Grid>
         <Grid item container xs={12} sm={12} md={5} className="box list">
-          <p className="sub_title">Habilidade e Linguagens</p>
-          <ul>
-            <li>
-              <p>HTML5, CSS3, JavaScript</p>
-            </li>
-            <li>
-              <p>Node.js, Testes (TDD)</p>
-            </li>
-            <li>
-              <p>Banco de dados SQL</p>
-            </li>
-            <li>
-              <p>React </p>
-            </li>
-            <li>
-              <p>Requisições a API (CRUD)</p>
-            </li>
-            <li>
-              <p>Styled components</p>
-            </li>
-            <li>
-              <p>Noções de UX, Noções de metodologias Ágeis</p>
-            </li>
-            <li>
-              <p>Manipulação com DOM</p>
-            </li>
-            <li>
-              <p>Inglês (intermediário)</p>
-            </li>
-          </ul>
+          <Grid item container direction="column">
+            <Grid item justify="center" sm={12} md>
+              <p className="sub_title">Habilidade e Linguagens</p>
+            </Grid>
+            <Grid item sm={12} md={6}>
+              <ul>
+                <li>
+                  <p>HTML5, CSS3, JavaScript</p>
+                </li>
+                <li>
+                  <p>Node.js, Testes (TDD)</p>
+                </li>
+                <li>
+                  <p>Banco de dados SQL</p>
+                </li>
+                <li>
+                  <p>React </p>
+                </li>
+                <li>
+                  <p>Requisições a API (CRUD)</p>
+                </li>
+                <li>
+                  <p>Styled components</p>
+                </li>
+                <li>
+                  <p>Noções de UX, Noções de metodologias Ágeis</p>
+                </li>
+                <li>
+                  <p>Manipulação com DOM</p>
+                </li>
+                <li>
+                  <p>Inglês (intermediário)</p>
+                </li>
+              </ul>
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
       <Grid item container xs={12} className="box list">
