@@ -8,6 +8,7 @@ import Login from '../pages/Login';
 import Portfolio from '../pages/Portfolio';
 import CommentList from '../pages/CommentList';
 import ContactList from '../pages/ContactList';
+import NotFound from '../pages/NotFound';
 
 export default function Routes() {
   return (
@@ -29,6 +30,7 @@ export default function Routes() {
         />
         <Route path="/contact" component={Contact} />
         <Route path="/login" component={Login} />
+        <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
   );
