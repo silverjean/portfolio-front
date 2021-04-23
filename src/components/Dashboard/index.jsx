@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 /* eslint-disable indent */
 /* eslint-disable object-curly-newline */
 import React, { useEffect, useState } from 'react';
@@ -276,6 +277,10 @@ export default function Dashboard({ contact }) {
                 placeholder="Pesquisa por nome"
                 style={{ padding: '0 10px' }}
                 onChange={({ target }) => setSearch(target.value)}
+                onKeyPress={(e) => {
+                  // eslint-disable-next-line no-unused-expressions
+                  e.key === 'Enter' && e.preventDefault();
+                }}
               />
               <IconButton
                 onClick={
