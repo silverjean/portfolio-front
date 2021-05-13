@@ -6,10 +6,10 @@ import 'typeface-roboto';
 export default createMuiTheme({
   palette: {
     primary: {
-      main: '#95afc0',
+      main: '#2c2c54',
     },
     secondary: {
-      main: '#30336b',
+      main: '#706fd3',
     },
     contrastThreshold: 3,
     tonalOffset: 0.2,
@@ -17,6 +17,9 @@ export default createMuiTheme({
   typography: {
     fontFamily: ['Roboto', 'serif'].join(','),
     fontSize: 14,
+    button: {
+      background: 'none',
+    },
   },
   overrides: {
     MuiCssBaseline: {
@@ -31,6 +34,11 @@ export default createMuiTheme({
     MuiButton: {
       root: {
         borderRadius: '12px',
+        transition: '1.2s all',
+        '&:hover': {
+          color: 'white',
+          background: 'none !important',
+        },
       },
     },
   },

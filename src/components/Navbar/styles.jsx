@@ -13,7 +13,13 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     textDecoration: 'inherit',
-    color: 'inherit',
+    color: '#227093',
+    transition: '01s all',
+
+    '&:hover': {
+      color: 'white',
+      background: 'none !important',
+    },
   },
   input: {
     marginLeft: theme.spacing(1),
@@ -22,6 +28,21 @@ const useStyles = makeStyles((theme) => ({
   },
   iconButton: {
     padding: 10,
+  },
+  header: {
+    marginTop: '25px',
+    borderRadius: '4px',
+  },
+  social: {
+    position: 'absolute',
+    right: '30px',
+  },
+  socialIcon: {
+    marginRight: '10px',
+    transition: '0.5s all',
+    '&:hover': {
+      marginBottom: '3px',
+    },
   },
 }));
 

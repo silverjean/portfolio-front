@@ -8,29 +8,32 @@ import { Link } from '@material-ui/core';
 import { Link as LinkReact } from 'react-router-dom';
 
 import useStyles from '../Navbar/styles';
-import './style.css';
 
 export default function Header() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" className="header">
+      <AppBar position="static" className={classes.header}>
         <Toolbar>
-          <LinkReact color="inherit" className="link" to="/">
-            <Button className="button">Currículo</Button>
-          </LinkReact>
-          <LinkReact color="inherit" className="link" to="/portfolio">
-            <Button className="button">Portifolio</Button>
-          </LinkReact>
-          <div id="social">
+          <Button color="inherit">
+            <LinkReact className={classes.link} to="/">
+              Currículo
+            </LinkReact>
+          </Button>
+          <Button color="inherit">
+            <LinkReact className={classes.link} to="/portfolio">
+              Portifolio
+            </LinkReact>
+          </Button>
+          <div className={classes.social}>
             <Link
               rel="noopener noreferrer"
               target="_blank"
               color="inherit"
               href="https://github.com/silverjean"
             >
-              <GitHubIcon className="social" />
+              <GitHubIcon className={classes.socialIcon} />
             </Link>
             <Link
               rel="noopener noreferrer"
@@ -38,7 +41,7 @@ export default function Header() {
               href="https://www.linkedin.com/in/silveirajean/"
               target="_blank"
             >
-              <LinkedInIcon className="social" />
+              <LinkedInIcon className={classes.socialIcon} />
             </Link>
           </div>
         </Toolbar>

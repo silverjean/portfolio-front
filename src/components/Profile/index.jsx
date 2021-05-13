@@ -3,18 +3,22 @@ import React from 'react';
 
 import profile from '../../assets/img/profi.jpg';
 import CustomTimeline from '../Timeline';
-import './style.css';
+import useStyles from './styles';
 
 export default function Profile() {
+  const classes = useStyles();
+
   return (
-    <div className="profile">
-      <div className="p_name">
-        <Typography className="name">Jean Silveira</Typography>
-        <Typography className="title">Desenvolvedor Full Stack</Typography>
-        <figure className="p_figure">
-          <img src={profile} alt="" />
+    <div className={classes.profile}>
+      <div className={classes.divName}>
+        <Typography className={classes.name}>Jean Silveira</Typography>
+        <Typography className={classes.title}>
+          Desenvolvedor Full Stack
+        </Typography>
+        <figure className={classes.figure}>
+          <img style={{ width: '100%' }} src={profile} alt="" />
         </figure>
-        <div className="p_information">
+        <div className={classes.info}>
           <CustomTimeline />
           <br />
         </div>

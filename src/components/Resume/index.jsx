@@ -10,7 +10,7 @@ import ResumeComp from '../ResumeComp';
 export default function Resume({ portfolio }) {
   return (
     <Grid container>
-      <Grid item xs={12} sm={12} md={4} lg={3} style={{ marginRight: '10px' }}>
+      <Grid item xs={12} md={8} lg={3} style={{ marginRight: '10px' }}>
         <Profile />
       </Grid>
       <Grid item xs>

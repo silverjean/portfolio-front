@@ -6,22 +6,24 @@ import pomo from '../../assets/img/pomo.PNG';
 import nave from '../../assets/img/nave.PNG';
 import spa from '../../assets/img/spa.PNG';
 
-import './port.css';
+import useStyles from './styles';
 
 export default function Portfolio() {
+  const classes = useStyles();
+
   return (
-    <Grid container className="body">
+    <Grid container className={classes.body}>
       <Grid item xs={12}>
         <Link
           rel="noopener noreferrer"
           target="_blank"
           href="https://nave-front-test.vercel.app/"
         >
-          <figure className="figure" id="nave">
-            <img src={nave} alt="" />
+          <figure className={classes.figure} id="nave">
+            <img className={classes.img} src={nave} alt="" />
           </figure>
         </Link>
-        <p className="link">
+        <p className={classes.link}>
           Aplicação para um teste de FrontEnd, com a criação e edição de cards.
         </p>
       </Grid>
@@ -31,11 +33,11 @@ export default function Portfolio() {
           target="_blank"
           href="https://moveitjs-silverjean.vercel.app/"
         >
-          <figure className="figure" id="pomo">
-            <img src={pomo} alt="" />
+          <figure className={classes.figure} id="pomo">
+            <img className={classes.img} src={pomo} alt="" />
           </figure>
         </Link>
-        <p className="link">
+        <p className={classes.link}>
           Aplicação para sprints de atividades e nos intervalos ela propoem
           algumas atividades.
         </p>
@@ -46,11 +48,11 @@ export default function Portfolio() {
           target="_blank"
           href="https://github.com/silverjean/ORM-Seqq"
         >
-          <figure className="figure">
-            <img src={orm} alt="" />
+          <figure className={classes.figure}>
+            <img className={classes.img} src={orm} alt="" />
           </figure>
         </Link>
-        <p className="link">
+        <p className={classes.link}>
           Aplicação backend, com banco de dados (postgresql), testes,
           controllers...
         </p>
@@ -61,11 +63,11 @@ export default function Portfolio() {
           target="_blank"
           href="https://github.com/silverjean/spa"
         >
-          <figure className="figure">
-            <img src={spa} alt="" />
+          <figure className={classes.figure}>
+            <img className={classes.img} src={spa} alt="" />
           </figure>
         </Link>
-        <p className="link">Exemplo simples de SPA em react</p>
+        <p className={classes.link}>Exemplo simples de SPA em react</p>
       </Grid>
     </Grid>
   );
